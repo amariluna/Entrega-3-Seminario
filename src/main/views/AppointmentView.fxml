@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.AppointmentController">
+    <children>
+        <Label text="Solicitar Turno" layoutX="150.0" layoutY="20.0" />
+        
+        <Label text="Selecciona un Médico:" layoutX="20.0" layoutY="60.0" />
+        <ComboBox fx:id="doctorComboBox" layoutX="20.0" layoutY="90.0" prefWidth="360.0 />
+        
+        <Label text="Fecha y Hora:" layoutX="20.0" layoutY="130.0" />
+        <TextField fx:id="datetimeField" layoutX="20.0" layoutY="160.0" promptText="YYYY-MM-DD HH:MM" />
+        
+        <Button text="Solicitar Turno" layoutX="150.0" layoutY="200.0" onAction="#handleRequestAppointment" />
+    </children>
+</AnchorPane>
+
